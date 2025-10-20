@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hikari Kicks — Japanese Sneaker Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-kanji" aria-hidden="true">光</span>
+            <div class="logo-text">
+                <strong>Hikari</strong>
+                <span>Kicks</span>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#craft">Craft</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-media" role="presentation">
+                <div class="hero-circle"></div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Minimalist sneaker floating above rippling water" />
+            </div>
+            <div class="hero-content">
+                <p class="hero-subtitle">東京発 — Tokyo crafted</p>
+                <h1>Where street beats tradition.</h1>
+                <p>Inspired by the glow of Shinjuku nights and the harmony of Edo craftsmanship, Hikari Kicks blends contemporary street style with timeless Japanese artistry.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#collections">Explore sneakers</a>
+                    <a class="btn ghost" href="#story">Discover our story</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="collections" id="collections">
+            <div class="section-heading">
+                <h2>Signature Collections</h2>
+                <p>Three lines, one philosophy — light, flow, precision.</p>
+            </div>
+            <div class="filters" role="tablist" aria-label="Collections filter">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-filter="night" role="tab" aria-selected="false">Neon Night</button>
+                <button class="filter-btn" data-filter="zen" role="tab" aria-selected="false">Zen Path</button>
+                <button class="filter-btn" data-filter="kaiju" role="tab" aria-selected="false">Kaiju Pulse</button>
+            </div>
+            <div class="product-grid">
+                <article class="product-card" data-category="night">
+                    <span class="product-tag">夜</span>
+                    <img src="https://images.unsplash.com/photo-1521090282280-8a1ff0600a98?auto=format&fit=crop&w=800&q=80" alt="Black sneaker with crimson accents" />
+                    <h3>Akari Midnight</h3>
+                    <p>Reflective fibers woven into obsidian leather mirror the shimmering Tokyo skyline.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+                <article class="product-card" data-category="zen">
+                    <span class="product-tag">禅</span>
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" alt="White sneaker with minimalist lines" />
+                    <h3>Sumi Whisper</h3>
+                    <p>Bamboo-knit uppers dyed with sumi ink evoke the serenity of Kyoto rock gardens.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+                <article class="product-card" data-category="kaiju">
+                    <span class="product-tag">怪獣</span>
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="Bold sneaker with electric green accents" />
+                    <h3>Kai Surge</h3>
+                    <p>Layered panels and luminescent scales capture the energy of neon-lit alleyways.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+                <article class="product-card" data-category="night">
+                    <span class="product-tag">夜</span>
+                    <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80" alt="Sleek sneaker with reflective piping" />
+                    <h3>Mirai Flux</h3>
+                    <p>Engineered mesh channels your stride while subtle glow lines pulse with movement.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+                <article class="product-card" data-category="zen">
+                    <span class="product-tag">禅</span>
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" alt="Cream-toned sneaker with hand-painted waves" />
+                    <h3>Nami Drift</h3>
+                    <p>Hand-painted ukiyo-e waves ride along natural hemp fibers for a weightless feel.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+                <article class="product-card" data-category="kaiju">
+                    <span class="product-tag">怪獣</span>
+                    <img src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=800&q=80" alt="Chunky sneaker with bold red gradients" />
+                    <h3>Shin Blaze</h3>
+                    <p>Volcanic gradients meet reinforced soles to take on the bustling streets of Osaka.</p>
+                    <a href="#contact" class="text-link">Reserve pair</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="story" id="story">
+            <div class="story-content">
+                <h2>Rooted in craft.</h2>
+                <p>Founded by designer Aiko Nakamura, Hikari Kicks collaborates with artisans across Japan — from dye masters in Kyoto to leather smiths in Kobe. Each pair is hand-numbered, celebrating the makers who bring them to life.</p>
+                <p>Our atelier honors the balance of <em>wabi-sabi</em>, embracing natural textures and subtle asymmetry to create sneakers that feel lived-in from the first step.</p>
+                <a class="btn outline" href="#craft">Meet the makers</a>
+            </div>
+            <div class="story-gallery" role="presentation">
+                <figure class="story-card">
+                    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80" alt="Craftsperson stitching leather" />
+                    <figcaption>Kobe leather atelier</figcaption>
+                </figure>
+                <figure class="story-card">
+                    <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=800&q=80" alt="Traditional dyeing vats" />
+                    <figcaption>Kyoto indigo dye house</figcaption>
+                </figure>
+                <figure class="story-card">
+                    <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80" alt="Designer sketching sneaker" />
+                    <figcaption>Shibuya design studio</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="lookbook" id="lookbook">
+            <div class="section-heading">
+                <h2>Lookbook // 夜景</h2>
+                <p>Captured on the streets of Tokyo, from Yanaka alleys to Shibuya crossings.</p>
+            </div>
+            <div class="lookbook-grid">
+                <figure class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Sneaker beside paper lantern" />
+                    <figcaption>Lantern light, lantern stride.</figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Sneaker against neon lights" />
+                    <figcaption>Neon reverie in Shinjuku.</figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1513875528452-39400945934d?auto=format&fit=crop&w=800&q=80" alt="Sneaker on tatami mat" />
+                    <figcaption>Tatami textures, modern forms.</figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1533681808246-09e1ff9845c4?auto=format&fit=crop&w=800&q=80" alt="Sneaker on crosswalk" />
+                    <figcaption>Crossing Shibuya at dawn.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="craft" id="craft">
+            <div class="section-heading">
+                <h2>Craft Notes</h2>
+                <p>Every silhouette follows the rhythm of Japanese seasonal festivals.</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline-card">
+                    <h3>春 — Haru Bloom</h3>
+                    <p>Organic cotton dyed with sakura petals and sealed with rice-bran wax for weather resistance.</p>
+                </article>
+                <article class="timeline-card">
+                    <h3>夏 — Natsu Ember</h3>
+                    <p>Breathable mesh infused with binchotan charcoal keeps each step cool during humid nights.</p>
+                </article>
+                <article class="timeline-card">
+                    <h3>秋 — Aki Harvest</h3>
+                    <p>Hand-stitched leather overlays echo the warm hues of Momiji foliage in Kyoto.</p>
+                </article>
+                <article class="timeline-card">
+                    <h3>冬 — Fuyu Dawn</h3>
+                    <p>Waterproofed suede finished with pearl dust to shimmer like snow on Mount Fuji.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-card">
+                <h2>Reserve your pair.</h2>
+                <p>Limited releases drop monthly. Join the waiting list for early access, atelier visits, and bespoke collaborations.</p>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                    <label for="collection">Collection</label>
+                    <select id="collection" name="collection">
+                        <option value="">Select collection</option>
+                        <option value="night">Neon Night</option>
+                        <option value="zen">Zen Path</option>
+                        <option value="kaiju">Kaiju Pulse</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream pair..."></textarea>
+
+                    <button type="submit" class="btn primary">Join waitlist</button>
+                </form>
+            </div>
+            <aside class="contact-aside">
+                <div class="aside-card">
+                    <h3>Atelier Hours</h3>
+                    <p>Wednesday – Sunday<br />12:00 – 19:00 JST</p>
+                </div>
+                <div class="aside-card">
+                    <h3>Visit Us</h3>
+                    <p>2-15-9 Jingumae, Shibuya<br />Tokyo 150-0001</p>
+                </div>
+                <div class="aside-card">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Line</a></li>
+                        <li><a href="#">Spotify Sessions</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Hikari Kicks. Crafted with 光.</p>
+    </footer>
+
+    <div class="floating-kanji" aria-hidden="true">光</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
